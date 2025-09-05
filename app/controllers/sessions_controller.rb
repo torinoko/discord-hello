@@ -15,8 +15,6 @@ class SessionsController < ApplicationController
     user_info = fetch_user_info(access_token)
 
     notify_admin(user_info)
-
-    render plain: "ただあきに連絡しておいたよ！ちょっと待っててね！"
   end
 
   private
